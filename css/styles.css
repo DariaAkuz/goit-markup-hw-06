@@ -529,15 +529,15 @@ img {
     background-color: var(--hoverfooter-bg-color);
 }
 
-.footer-text-form {
+.footer-text-sub {
     margin-bottom: 16px;
-
     font-weight: 500;
     color: var(--fist-text-color);
 }
 
-.footer-form-wrap {
+.footer-form {
     display: flex;
+    gap: 24px;
 }
 
 .form-input-footer {
@@ -547,11 +547,11 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
-    margin-right: 24px;
+
 
 
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--fist-text-color);
     background-color: transparent;
@@ -562,17 +562,18 @@ img {
 
 .form-input-footer::placeholder {
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--fist-text-color);
 }
 
 .form-btn-footer {
+    display: flex;
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
     border: 0;
-    display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -793,6 +794,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--top-text-color);
+    background-color: transparent;
 
     outline: transparent;
     transition: border-color var(--tra);
@@ -838,7 +840,7 @@ img {
 .form-coment {
     width: 100%;
     height: 120px;
-    padding: 8px 8px 8px 16px;
+    padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
@@ -848,7 +850,8 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--top-text-color);
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
 
 }
 
@@ -884,24 +887,26 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-}
 
-.form-check+.check-label span {
     transition: background-color var(--tra), border-color var(--tra), fill var(--tra);
+
+
 }
 
 .form-check:checked+.check-label span {
     background-color: var(--hover-bg-color);
     border-color: var(--hover-border-color);
     fill: var(--footer-text-color);
+    border: none;
 }
 
-.check-label a {
+.check-link {
     margin-left: 4px;
+    color: var(--third-text-color);
 }
 
 .form-btn {
